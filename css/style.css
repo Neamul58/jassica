@@ -1,0 +1,183 @@
+/* fonts family */
+
+:root {
+    --body-font : "Work Sans", sans-serif;
+    --bs-btn-font-family : "Work Sans", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.display-1 {
+    font-size: calc(4.375rem + 4.5vw);
+    font-weight: 900;
+    font-family: var(--body-font);
+    line-height: 80%;
+}
+
+.text-primary {
+    color: #4BA1A7 !important;
+}
+
+.gray {
+    color: #777777;
+}
+
+.light {
+    color: #ccc;
+}
+
+.teal {
+   color: #F0756C;
+}
+
+/* Header part start */
+.position-sticky {
+    z-index: 10;
+}
+
+.navbar {
+    position: relative;
+}
+.offcanvas-menu-visible {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    right: -999px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    z-index: 20;
+}
+
+.offcanvas-menu-visible.show {
+    right: 0;
+    opacity: 1;
+}
+
+.offcanvas-menu-close {
+    cursor: pointer;
+}
+
+.offcanvas-menu-trigger {
+    cursor: pointer;
+}
+
+.offcanvas-menu-shade {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.4);
+    z-index: 10;
+    transition: 0.5s;
+    visibility: hidden;
+    right: -9999px;
+}
+
+.offcanvas-menu-shade.active {
+    visibility: visible;
+    right: 0;
+}
+
+.offcanvas-menu-visible .nav-item a.nav-link {
+    letter-spacing: 0.2rem;
+    transition: 0.5s;
+}
+
+.offcanvas-menu-visible .nav-item a.nav-link.active,
+.offcanvas-menu-visible .nav-item a.nav-link:hover {
+    color: #f6f611 !important;
+}
+/* Header part end */
+
+/* Hero Section */
+
+.banner {
+    background: url(../images/banner.png) no-repeat center center/cover;
+    margin-top: 150px !important;
+}
+
+.banner .bottom-content .item p {
+    color: #ffffffbd;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.section-bg {
+    background: url(../images/section-banner.png) no-repeat center center/cover;
+    overflow: hidden;
+}
+
+/* Portfolio Start */
+.portfolio-btn a,
+.portfolio-btn-bottom a {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: #000;
+    background: #EFEAEA;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.portfolio-btn a:hover,
+.portfolio-btn-bottom a:hover {
+    color: #fff;
+    background: #000;
+}
+
+.portfolio-btn-bottom a {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Portfolio End */
+
+/* Testimonial Start */
+.testimonial .testimonial-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial .testimonial-carousel .owl-dot {
+    background: #ccc !important;
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.testimonial .testimonial-carousel .owl-dot.active {
+    background: #F0756C !important;
+}
+/* Testimonial End */
+
+/* Blog */
+.news .news-btn a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    transition: 0.5s;
+}
+
+.news .news-btn a:hover {
+    color: #fff;
+    background: #000;
+}
+
+/* form */
+.contact-form {
+    background: #EFEAEA;
+}
+
+
